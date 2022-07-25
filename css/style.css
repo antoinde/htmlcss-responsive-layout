@@ -1,3 +1,4 @@
+/************************************ Reset html */
 * {
     margin: 0;
     padding: 0;
@@ -5,8 +6,22 @@
     font-family: 'PT Sans', sans-serif;
 }
 
-/* Set Background Color  */
+/************************************ Set Background Color  */
 
 .bg_color_blue{ background-color: #0084fd;}
 .bg_color_violet{ background-color: #9792e4; }
 .bg_color_black { background-color: #333333; }
+
+/* Height-Temporarily  */
+    header{
+        height: 70px;
+    }
+
+    section{
+        height: 400px;
+    }
+
+    footer{
+        height: 300px;
+    }
+/* /Temporarily  */
