@@ -11,12 +11,22 @@
 .bg_color_blue{ background-color: #0084fd;}
 .bg_color_violet{ background-color: #9792e4; }
 .bg_color_black { background-color: #333333; }
+.bg_color_white { background-color: #ffffff; }
+.color_white { color: #ffffff;  }
+
+/************************************  Utility  */
+.flex{ display: flex; }
+.vedi {border: 1px dashed red;}
+/************************************ /Utility  */
+img{ max-width: 100%;}
+
+.button{
+    border-radius: 25px;
+    padding: 10px 15px;
+    font-weight: 200;
+}
 
 /* Height-Temporarily  */
-    header{
-        height: 70px;
-    }
-
     section{
         height: 400px;
     }
@@ -25,3 +35,48 @@
         height: 300px;
     }
 /* /Temporarily  */
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+header .img_container, header .hamburger{
+    padding: 10px 0px;
+}
+
+.hamburger{
+    color: #ffffff;
+    display: none;
+}
+
+.header-right{
+    column-gap: 50px;
+    align-items: center;
+}
+
+.header-right a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.header-right .button a{
+    color: #000000;
+}
+
+
+
+/* tablet, mobile, desktop res: 768px 480px desktop 1200px */
+
+@media screen and (max-width: 768px) {
+    .header-right{
+        display: none;
+    }
+    header .hamburger{
+        display: block;
+    }
+}
