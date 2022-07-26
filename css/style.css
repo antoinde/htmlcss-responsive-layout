@@ -110,6 +110,8 @@ header .img_container, header .hamburger{
     margin: 0 auto;
     padding: 30px 20px;
     column-gap: 20px;
+    row-gap: 20px;
+    flex-direction: row;
 }
 .sez2 .card{
     width: calc(100% / 2);
@@ -131,8 +133,13 @@ header .img_container, header .hamburger{
     header .hamburger{
         display: block;
     }
-    /* Section-1 */
-
+    /* Section-2 */
+    .sez2 .container{
+        flex-direction: column;
+    }
+    .sez2 .card{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 480px) {
