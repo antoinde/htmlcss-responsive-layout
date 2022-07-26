@@ -129,22 +129,41 @@ header .img_container, header .hamburger{
 
 /* /Section 3 */
 
+/* Section 4 */
+.sez4 .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+.sez4 .bottom{
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.sez4 .card{
+    width: calc(100% / 3 - 14px);
+    background-color: #fff;
+    border-radius: 10px;
+}
+/* /Section 4 */
+
 /* tablet, mobile, desktop res: 768px 480px desktop 1200px */
 
 @media screen and (max-width: 768px) {
-    /* Header */
+
     .header-right{
         display: none;
     }
     header .hamburger{
         display: block;
     }
-    /* Section-2 */
     .sez2 .container{
         flex-direction: column;
     }
     .sez2 .card{
         width: 100%;
+    }
+    .sez4 .card{
+        width: calc(100% / 2 - 10px);
     }
 }
 
@@ -156,6 +175,9 @@ header .img_container, header .hamburger{
         width: 100%;
     }
     .sez1 .card {
+        width: 100%;
+    }
+    .sez4 .card{
         width: 100%;
     }
 }
