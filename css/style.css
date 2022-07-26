@@ -146,6 +146,23 @@ header .img_container, header .hamburger{
 }
 /* /Section 4 */
 
+/* Section 5 */
+.sez5 .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 40px;
+    flex-direction: row;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.sez5 .card1{
+    width: 70%;
+}
+.sez5 .card2{
+    width: 30%;
+}
+/* /Section 5 */
+
 /* tablet, mobile, desktop res: 768px 480px desktop 1200px */
 
 @media screen and (max-width: 768px) {
@@ -178,6 +195,15 @@ header .img_container, header .hamburger{
         width: 100%;
     }
     .sez4 .card{
+        width: 100%;
+    }
+    .sez5 .container{
+        flex-direction: column;
+    }
+    .sez5 .card1{
+        width: 100%;
+    }
+    .sez5 .card2{
         width: 100%;
     }
 }
