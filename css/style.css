@@ -17,6 +17,7 @@
 /************************************  Utility  */
 .flex{ display: flex; }
 .row{ flex-direction: row;}
+.column{ flex-direction: column;}
 .wrap{ flex-wrap: wrap;}
 .vedi {border: 1px dashed red;}
 /************************************ /Utility  */
@@ -82,9 +83,10 @@ header .img_container, header .hamburger{
     line-height: 1.7rem;
     margin-bottom: 25px;
 }
-.sez1 .card i{
+.sez1 .card i:not(.sez1 .fa-apple){
     color: #0084fd;
     margin-bottom: 15px;
+    margin-top: 30px;
 }
 /***** /general *****/
 
@@ -105,6 +107,9 @@ header .img_container, header .hamburger{
     width: calc(100% / 3 - 14px);
     /* height: 250px; da togliere successivamente */
     padding: 20px;
+}
+.sez1 .card:not(#special_card){
+    text-align: center;
 }
 .sez1 .card:first-child{
     width: calc(100% / 3 * 2 - 6px);
@@ -146,6 +151,37 @@ header .img_container, header .hamburger{
 }
 .sez2 .card{
     width: calc(100% / 2);
+}
+.sez2 .card.left{
+    color: #fff;
+}
+.sez2 .card.left h2{
+    margin-bottom: 40px;
+}
+
+.sez2 .card.right{
+    background-color: #fff;
+    border-radius: 45px;
+    text-align: center;
+    margin-top: 110px;
+    padding: 35px;
+}
+.sez2 .card.right img{
+    width: 60%;
+}
+.sez2 .card.right h3{
+    margin-bottom: 25px;
+}
+.sez2 .card.right p{
+    line-height: 1.8rem;
+}
+.sez2 .arrow_down{
+    margin-top: 35px;
+}
+.sez2 .arrow_down span{
+    background-color: #9792e4;
+    padding: 10px 15px;
+    border-radius: 50%;
 }
 /* /Section 2 */
 
@@ -220,11 +256,23 @@ header .img_container, header .hamburger{
     header .hamburger{
         display: block;
     }
+    .sez1 .card.flex .left {
+        width: 100%;
+    }
+    .sez1 .card.flex .right {
+        padding-top: 37px;
+    }
     .sez2 .container{
         flex-direction: column;
     }
     .sez2 .card{
         width: 100%;
+    }
+    .sez2 .card.left h2{
+        font-size: 4rem;
+    }
+    .sez2 .card.right{
+        margin-top: 0px;
     }
     .sez4 .card{
         width: calc(100% / 2 - 10px);
