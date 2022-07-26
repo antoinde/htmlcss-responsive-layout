@@ -156,10 +156,10 @@ header .img_container, header .hamburger{
     row-gap: 20px;
 }
 .sez5 .card1{
-    width: 70%;
+    width: calc(100% / 3 * 2);
 }
 .sez5 .card2{
-    width: 30%;
+    width: calc(100% / 3);
 }
 /* /Section 5 */
 
@@ -187,6 +187,7 @@ header .img_container, header .hamburger{
 @media screen and (max-width: 480px) {
     .sez1 .container{
         flex-direction: column;
+        padding: 30px 20px;
     }
     .sez1 .card:first-child {
         width: 100%;
@@ -199,6 +200,8 @@ header .img_container, header .hamburger{
     }
     .sez5 .container{
         flex-direction: column;
+        padding: 30px 20px;
+
     }
     .sez5 .card1{
         width: 100%;
