@@ -16,6 +16,8 @@
 
 /************************************  Utility  */
 .flex{ display: flex; }
+.row{ flex-direction: row;}
+.wrap{ flex-wrap: wrap;}
 .vedi {border: 1px dashed red;}
 /************************************ /Utility  */
 img{ max-width: 100%;}
@@ -28,7 +30,7 @@ img{ max-width: 100%;}
 
 /* Height-Temporarily  */
     section{
-        height: 400px;
+        /* height: 400px; */
     }
 
     footer{
@@ -36,13 +38,21 @@ img{ max-width: 100%;}
     }
 /* /Temporarily  */
 
-.container{
+.container-header{
     max-width: 1200px;
     margin: 0 auto;
     height: 100%;
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
 
+}
+
+/* Header */
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0px;
 }
 
 header .img_container, header .hamburger{
@@ -67,16 +77,72 @@ header .img_container, header .hamburger{
 .header-right .button a{
     color: #000000;
 }
+/* /Header */
+
+/* Section 1 */
+.sez1 .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    column-gap: 20px;
+    row-gap: 20px;
+    flex-direction: row;
+}
+.sez1{
+    margin-top: 65px;
+}
+.sez1 .card{
+    background-color: #b5ddff;
+    border-radius: 25px;
+    width: calc(100% / 3 - 14px);
+    height: 250px; /* da togliere successivamente */
+    padding: 20px;
+}
+.sez1 .card:first-child{
+    width: calc(100% / 3 * 2 - 6px);
+}
+
+/* /Section 1 */
+
+/* Section 2 */
+.sez2 .container{
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    column-gap: 20px;
+}
+.sez2 .card{
+    width: calc(100% / 2);
+}
+/* /Section 2 */
+
+/* Section 3 */
 
 
+/* /Section 3 */
 
 /* tablet, mobile, desktop res: 768px 480px desktop 1200px */
 
 @media screen and (max-width: 768px) {
+    /* Header */
     .header-right{
         display: none;
     }
     header .hamburger{
         display: block;
+    }
+    /* Section-1 */
+
+}
+
+@media screen and (max-width: 480px) {
+    .sez1 .container{
+        flex-direction: column;
+    }
+    .sez1 .card:first-child {
+        width: 100%;
+    }
+    .sez1 .card {
+        width: 100%;
     }
 }
