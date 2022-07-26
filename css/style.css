@@ -43,6 +43,7 @@ img{ max-width: 100%;}
     position: fixed;
     width: 100%;
     top: 0px;
+    z-index: 100;
 }
 
 header .img_container, header .hamburger{
@@ -70,6 +71,23 @@ header .img_container, header .hamburger{
 /* /Header */
 
 /* Section 1 */
+/***** general *****/
+.sez1 .card h3{
+    color: #0084fd;
+    margin-bottom: 25px;
+}
+.sez1 .card p{
+    color: #5d7283;
+    font-weight: 700;
+    line-height: 1.7rem;
+    margin-bottom: 25px;
+}
+.sez1 .card i{
+    color: #0084fd;
+    margin-bottom: 15px;
+}
+/***** /general *****/
+
 .sez1 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -83,13 +101,36 @@ header .img_container, header .hamburger{
 }
 .sez1 .card{
     background-color: #b5ddff;
-    border-radius: 25px;
+    border-radius: 15px;
     width: calc(100% / 3 - 14px);
-    height: 250px; /* da togliere successivamente */
+    /* height: 250px; da togliere successivamente */
     padding: 20px;
 }
 .sez1 .card:first-child{
     width: calc(100% / 3 * 2 - 6px);
+}
+.sez1 .card.flex .left {
+    width: calc(100% / 2);
+}
+.sez1 .card.flex .right {
+    width: calc(100% / 2);
+}
+#special_card img{
+    height: 100%;
+    position: relative;
+}
+#special_card{
+    padding-bottom: 0px;
+}
+#apple_i{
+    color: #fff;
+}
+.sez1 .button{
+    text-align: center;
+    display: inline-block;
+    width: 179px;
+    padding: 7px;
+    font-weight: 700;
 }
 
 /* /Section 1 */
@@ -188,6 +229,9 @@ header .img_container, header .hamburger{
     .sez4 .card{
         width: calc(100% / 2 - 10px);
     }
+    #special_card{
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -208,3 +252,4 @@ header .img_container, header .hamburger{
         margin: 0 auto;
         padding: 30px 20px;
     }
+}
