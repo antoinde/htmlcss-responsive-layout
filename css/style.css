@@ -28,16 +28,6 @@ img{ max-width: 100%;}
     font-weight: 200;
 }
 
-/* Height-Temporarily  */
-    section{
-        /* height: 400px; */
-    }
-
-    footer{
-        height: 300px;
-    }
-/* /Temporarily  */
-
 .container-header{
     max-width: 1200px;
     margin: 0 auto;
@@ -163,6 +153,22 @@ header .img_container, header .hamburger{
 }
 /* /Section 5 */
 
+/* Section 6 */
+.sez6 .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20%;
+}
+/* /Section 6 */
+
+/* Footer */
+.footer .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20%;
+}
+/* /Footer */
+
 /* tablet, mobile, desktop res: 768px 480px desktop 1200px */
 
 @media screen and (max-width: 768px) {
@@ -185,28 +191,20 @@ header .img_container, header .hamburger{
 }
 
 @media screen and (max-width: 480px) {
-    .sez1 .container{
-        flex-direction: column;
-        padding: 30px 20px;
-    }
-    .sez1 .card:first-child {
-        width: 100%;
-    }
-    .sez1 .card {
-        width: 100%;
-    }
-    .sez4 .card{
-        width: 100%;
-    }
+    .sez1 .container,
     .sez5 .container{
         flex-direction: column;
         padding: 30px 20px;
-
     }
-    .sez5 .card1{
+    .sez1 .card:first-child,
+    .sez1 .card,
+    .sez4 .card,
+    .sez5 .card1,
+    .sez5 .card2 {
         width: 100%;
     }
-    .sez5 .card2{
-        width: 100%;
+    .sez6 .container,
+    .footer .container{
+        margin: 0 auto;
+        padding: 30px 20px;
     }
-}
