@@ -238,6 +238,13 @@ header .img_container, header .hamburger{
     margin: 0 auto;
     padding: 30px 20px;
 }
+.sez4 .top{
+    font-size: 2.8rem;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
 .sez4 .bottom{
     column-gap: 20px;
     row-gap: 20px;
@@ -246,6 +253,27 @@ header .img_container, header .hamburger{
     width: calc(100% / 3 - 14px);
     background-color: #fff;
     border-radius: 10px;
+    padding: 20px;
+}
+.sez4 .card .number{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #9792e4;
+}
+.sez4 .card h3{
+    color: #9792e4;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.sez4 .card p{
+    margin-bottom: 30px;
+}
+.sez4 .card .button{
+    background-color:#9792e4;
+    color: #fff;
+    font-weight: 700;
+    display: inline-block;
+    padding: 10px 50px;
 }
 /* /Section 4 */
 
