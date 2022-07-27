@@ -16,6 +16,12 @@
 
 /************************************  Utility  */
 .flex{ display: flex; }
+.center { 
+    justify-content: center;
+    align-items: center;    
+}
+.justify-center {justify-content: center;}
+.align-center {align-items: center;}
 .row{ flex-direction: row;}
 .column{ flex-direction: column;}
 .wrap{ flex-wrap: wrap;}
@@ -193,7 +199,37 @@ header .img_container, header .hamburger{
     row-gap: 20px;
     flex-direction: column;
 }
+.sez3 .card0{
+    text-align: center;
+    padding: 50px 10px;
 
+}
+.sez3 .card0 h1{
+    color: #9792e4;
+    margin: 10px 0px;
+    font-size: 2.8rem;
+}
+.sez3 .card{
+    color: #ffffff;
+    background-color: #9792e4;
+    column-gap: 20px;
+    padding: 30px 10px;
+    border-radius: 40px;
+    flex-direction: row;
+}
+.sez3 .card .img_container{
+    width: 150px;
+}
+.sez3 .card .img_container img{
+    border-radius: 50%;
+    min-width: 150px;
+    min-height: 150px;
+    object-fit: cover;
+}
+.sez3 .card .partner_name{
+    margin-top: 20px;
+    font-weight: 700;
+}
 /* /Section 3 */
 
 /* Section 4 */
@@ -299,5 +335,9 @@ header .img_container, header .hamburger{
     .footer .container{
         margin: 0 auto;
         padding: 30px 20px;
+    }
+    .sez3 .card{
+        flex-direction: column;
+        text-align: center;
     }
 }
