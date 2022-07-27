@@ -397,7 +397,8 @@ header .img_container, header .hamburger{
     .sez1 .card.flex .right {
         padding-top: 37px;
     }
-    .sez2 .container{
+    .sez2 .container,
+    #special_card {
         flex-direction: column;
     }
     .sez2 .card.left h2{
@@ -408,9 +409,6 @@ header .img_container, header .hamburger{
     }
     .sez4 .card{
         width: calc(100% / 2 - 10px);
-    }
-    #special_card{
-        flex-direction: column;
     }
 }
 
