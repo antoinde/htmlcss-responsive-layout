@@ -25,7 +25,6 @@
 .row{ flex-direction: row;}
 .column{ flex-direction: column;}
 .wrap{ flex-wrap: wrap;}
-.vedi {border: 1px dashed red;}
 /************************************ /Utility  */
 img{ max-width: 100%;}
 
