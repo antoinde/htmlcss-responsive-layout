@@ -65,6 +65,10 @@ header .img_container, header .hamburger{
     display: none;
 }
 
+.hamburger:hover{
+    cursor: pointer;
+}
+
 .header-right{
     column-gap: 50px;
     align-items: center;
@@ -123,10 +127,7 @@ header .img_container, header .hamburger{
 .sez1 .card:first-child{
     width: calc(100% / 3 * 2 - 6px);
 }
-.sez1 .card.flex .left {
-    width: calc(100% / 2);
-}
-.sez1 .card.flex .right {
+.sez1 .card.flex .left, .sez1 .card.flex .right {
     width: calc(100% / 2);
 }
 #special_card img{
