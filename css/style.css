@@ -164,7 +164,9 @@ header .img_container, header .hamburger{
 .sez2 .card.left h2{
     margin-bottom: 40px;
 }
-
+.sez2 .card.left p{
+    line-height: 1.8rem;
+}
 .sez2 .card.right{
     background-color: #fff;
     border-radius: 45px;
@@ -202,12 +204,15 @@ header .img_container, header .hamburger{
 .sez3 .card0{
     text-align: center;
     padding: 50px 10px;
-
+    line-height: 1.8rem;
 }
 .sez3 .card0 h1{
     color: #9792e4;
     margin: 10px 0px;
     font-size: 2.8rem;
+}
+.sez3 .card0 p{
+    line-height: 1.8rem;
 }
 .sez3 .card{
     color: #ffffff;
@@ -225,6 +230,9 @@ header .img_container, header .hamburger{
     min-width: 150px;
     min-height: 150px;
     object-fit: cover;
+}
+.sez3 .card .text_container{
+    line-height: 1.8rem;
 }
 .sez3 .card .partner_name{
     margin-top: 20px;
@@ -265,8 +273,9 @@ header .img_container, header .hamburger{
     margin-top: 10px;
     margin-bottom: 30px;
 }
-.sez4 .card p{
+.sez4 .card p {
     margin-bottom: 30px;
+    line-height: 1.8rem;
 }
 .sez4 .card .button{
     background-color:#9792e4;
@@ -291,6 +300,32 @@ header .img_container, header .hamburger{
 }
 .sez5 .card2{
     width: calc(100% / 3);
+}
+.sez5 .card1 h1{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #9792e4;
+}
+.sez5 .card1 p{
+    margin-top: 20px;
+    line-height: 1.8rem;
+}
+.sez5 .card2 img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.sez5 .card2 h3{
+    line-height: 1.8rem;
+    color: #9792e4;
+    font-weight: 700;
+}
+.sez5 .card2 .button{
+    background-color:#9792e4;
+    color: #fff;
+    font-weight: 700;
+    display: inline-block;
+    padding: 10px 50px;
 }
 /* /Section 5 */
 
