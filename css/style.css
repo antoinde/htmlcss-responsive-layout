@@ -391,7 +391,8 @@ header .img_container, header .hamburger{
     header .hamburger{
         display: block;
     }
-    .sez1 .card.flex .left {
+    .sez1 .card.flex .left,
+    .sez2 .card {
         width: 100%;
     }
     .sez1 .card.flex .right {
@@ -399,9 +400,6 @@ header .img_container, header .hamburger{
     }
     .sez2 .container{
         flex-direction: column;
-    }
-    .sez2 .card{
-        width: 100%;
     }
     .sez2 .card.left h2{
         font-size: 4rem;
